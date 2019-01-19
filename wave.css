@@ -1,0 +1,56 @@
+/* 
+https://www.interwebing.com/css/cool-css-backgrounds-the-aurora-effect
+ */
+
+body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(minmax(100px, 1fr));
+  height: 100vh;
+  width: 100vw;
+  margin: 0px 0px;
+  background-color: #7cc1fa;
+  background: linear-gradient(#75b5f1, #ffd484);
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: repeat-x;
+  overflow: hidden;
+}
+
+#sun {
+  grid-column-end: -1;
+  justify-self: center;
+  margin-right: 5vw;
+  }
+
+#sea {
+  grid-column: 1 / -1;
+}
+
+#sea-bottom {
+  position: fixed;
+  top: 88vh;
+  bottom: 0px;
+  z-index: 1;
+  }
+
+.aurora1 {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  animation-name: aurora1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  z-index: 2;
+}
+
+@keyframes aurora1 {
+  from {top:95vh;}
+  to {top: 78vh;}
+
+}
+
+
