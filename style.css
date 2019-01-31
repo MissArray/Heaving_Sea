@@ -7,12 +7,19 @@ body {
   width: 100vw;
   margin: 0px 0px;
   background-color: #7cc1fa;
+  -moz-background: linear-gradient(#75b5f1, #ffd484);
+  -webkit-background: linear-gradient(#75b5f1, #ffd484);
   background: linear-gradient(#75b5f1, #ffd484);
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   background-size: 100% 100%;
   background-repeat: repeat-x;
   overflow: hidden;
+  animation-name: sunset;
+  animation-duration: 6s;
+  animation-timing-function: ease;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
 }
 
 #cloud-1 {
@@ -24,9 +31,9 @@ body {
 #cloud_1 {
   position: absolute;
   animation-name: drifting_clouds;
-  animation-duration: 16s;
+  animation-duration: 18s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
+  animation-timing-function: linear;
   animation-direction: normal;
 }
 
@@ -36,9 +43,9 @@ body {
   grid-row: 1 / span 1;
   padding-top: 70px;  
   animation-name: drifting_clouds;
-  animation-duration: 20s;
+  animation-duration: 22s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
+  animation-timing-function: linear;
   animation-direction: normal;
 
   
@@ -85,21 +92,61 @@ body {
   to {top: 78vh;}
 
 }
+
+@keyframes sunset {
+  0% {background: linear-gradient(#75b5f1, #ffd484);}
+  5% {background: linear-gradient(#78B4F2, #ffd484);}
+  10% {background: linear-gradient(#79B0F0, #ffd484);}
+  15% {background: linear-gradient(#7BACEF, #ffd484);}
+  20% {background: linear-gradient(#899EEF, #ffd484);}
+  25% {background: linear-gradient(#8A98F0, #ffd484);}
+  30% {background: linear-gradient(#9C86EB, #ffd484);}
+  35% {background: linear-gradient(#A084EB, #ffd484);}
+  40% {background: linear-gradient(#A778EA, #ffd484);}
+  45% {background: linear-gradient(#AF6FE9, #ffd484);}
+  50% {background: linear-gradient(#A535C8, #ffd484);}
+  55% {background: linear-gradient(#9B32C3, #ffd484);}
+  60% {background: linear-gradient(#8B2AB7, #ffd484);}
+  65% {background: linear-gradient(#7A26AF, #ffd484);}
+  70% {background: linear-gradient(#6620A4, #ffd484);}
+  75% {background: linear-gradient(#541C97, #ffd484);}
+  80% {background: linear-gradient(#42178D, #ffd484);}
+  85% {background: linear-gradient(#381387, #ffd484);}
+  90% {background: linear-gradient(#2A0880, #ffd484);}
+  95% {background: linear-gradient(#20077F, #ffd484);}
+  100% {background: linear-gradient(#1B0978, #ffd484);}
+}
+
 @keyframes drifting_clouds {
-  from {
-    -webkit-transform: translateX(-350px);
-    -ms-transform: translateX(-350px);
-    transform: translateX(-350px);
+  0% {
+    -webkit-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    transform: translateX(-300px);
     }
-  to {transform: translateX(1700px);}
+
+  100% {
+    transform: translateX(1700px);
+    -ms-transform: translateX(1700px);
+    -webkit-transform: translateX(1700px);  
+    }
   }
 
   @keyframes sun-pulse {
 from {
-transform: scale(1.0);
+  -ms-transform: scaleX(1.0);
+  -ms-transform: scaleY(1.0);
+  -webkit-transform: scaleX(1.0);
+  -webkit-transform: scaleY(1.0);
+  transform: scaleX(1.0);
+  transform: scaleY(1.0);
 }
 to {
-transform: scale(1.03);
+  -ms-transform: scaleX(1.04);
+  -ms-transform: scaleY(1.02);
+  -webkit-transform: scaleX(1.04);
+  -webkit-transform: scaleY(1.02);
+  transform: scaleX(1.04);
+  transform: scaleY(1.02);
 }
 }
 
