@@ -8,24 +8,40 @@ body {
   width: 100vw;
   margin: 0px 0px;
   background-color: #7cc1fa;
-  -moz-transition: background 6s ease-in-out;
-  -webkit-transition: background 6s ease-in-out;
-  transition: background 6s ease-in-out;
-  -moz-background: linear-gradient(#75b5f1, #ffd484);
-  -webkit-background: linear-gradient(#75b5f1, #ffd484);
-  background: linear-gradient(#75b5f1, #ffd484);
+  background: url('./daylight.svg');
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   background-size: 100% 100%;
-  background-repeat: repeat-x;
   overflow: hidden;
- 
+  z-index: 1;
 }
 
-body:hover {
-  -moz-background: linear-gradient(#1B0978, #ffd484);
-    -webkit-background: linear-gradient(#1B0978, #ffd484);
-    background: linear-gradient(#1B0978, #ffd484);
+#sunset-gradient {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background: url('./sunset.svg');
+  background-size: 100% 100%;
+  animation-name: sunset;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+  z-index: 2;
+}
+
+@keyframes sunset {
+  0% {opacity: 0.0;}
+  10% {opacity: 0.1;}
+  20% {opacity: 0.2;}
+  30% {opacity: 0.3;}
+  40% {opacity:0.4;}
+  50% {opacity: 0.5;}
+  60% {opacity: 0.6;}
+  70% {opacity: 0.7;}
+  80% {opacity: 0.8;}
+  90% {opacity: 0.9;}
+  100% {opacity: 1.0;}
 }
 
 #cloud-1 {
@@ -41,6 +57,7 @@ body:hover {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: normal;
+  z-index: 5;
 }
 
 #cloud-2 {
@@ -53,8 +70,7 @@ body:hover {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: normal;
-
-  
+  z-index: 6;  
 }
 
 #sun {
@@ -69,6 +85,7 @@ body:hover {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  z-index: 4;
   }
 
 #sea {
@@ -79,7 +96,7 @@ body:hover {
   position: fixed;
   top: 88vh;
   bottom: 0px;
-  z-index: 1;
+  z-index: 5;
   }
 
 .heaving-sea {
@@ -91,7 +108,7 @@ body:hover {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
-  z-index: 2;
+  z-index: 6;
 }
 
 @keyframes heaving_sea {
@@ -158,4 +175,5 @@ to {
   transform: scaleY(1.02);
 }
 }
+
 
