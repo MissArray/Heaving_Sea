@@ -21,7 +21,7 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0;
-  background: url('../images/daylight.svg');
+  background: url('./images/daylight.svg');
   z-index: 1;
 }
 
@@ -32,7 +32,7 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0;
-  background: url('../images/sunset-stars.svg');
+  background: url('./images/sunset-stars.svg');
   -moz-background-size: 100% auto;
   -webkit-background-size: 100% auto;
   background-size: 100% auto;
