@@ -6,6 +6,7 @@ Animated seascape
 
 ## Sources
 
+https://www.oreilly.com/library/view/creating-web-animations/9781491957509/ch04.html
 https://www.interwebing.com/css/cool-css-backgrounds-the-aurora-effect
 https://codepen.io/matchboxhero/pen/XeQWNw
 https://www.creativebloq.com/inspiration/css-animation-examples 
