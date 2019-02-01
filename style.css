@@ -8,7 +8,7 @@ body {
   width: 100vw;
   margin: 0px 0px;
   background-color: #7cc1fa;
-  background: url('./daylight.svg');
+  background: url('../images/daylight.svg');
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   background-size: 100% 100%;
@@ -20,28 +20,14 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0;
-  background: url('./sunset.svg');
-  background-size: 100% 100%;
+  background: url('../images/sunset-stars.svg');
+  background-size: 100% auto;
   animation-name: sunset;
-  animation-duration: 6s;
+  animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   animation-timing-function: ease-in-out;
   z-index: 2;
-}
-
-@keyframes sunset {
-  0% {opacity: 0.0;}
-  10% {opacity: 0.1;}
-  20% {opacity: 0.2;}
-  30% {opacity: 0.3;}
-  40% {opacity:0.4;}
-  50% {opacity: 0.5;}
-  60% {opacity: 0.6;}
-  70% {opacity: 0.7;}
-  80% {opacity: 0.8;}
-  90% {opacity: 0.9;}
-  100% {opacity: 1.0;}
 }
 
 #cloud-1 {
@@ -80,7 +66,21 @@ body {
   position: relative;
   margin-right: 5vw;
   animation-name: sun-setting;
-  animation-duration: 6s;
+  animation-duration: 8s;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: 4;
+  }
+
+#moon {
+  grid-column: 3;
+  grid-row: 1 / span 1;
+  justify-self: center;
+  position: relative;
+  animation-name: moonrise;
+  animation-duration: 8s;
   animation-direction: alternate-reverse;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -139,8 +139,50 @@ body {
   90% {opacity: 0.1;}
   92% {opacity: 0.07;}
   95% {opacity: 0.05;}
-  97% {opacity: 0.025;}
+  96% {opacity: 0.025;}
+  97% {opacity: 0.01;}
+  98% {opacity: 0.0;}
   100% {opacity: 0.0;}
+}
+
+@keyframes moonrise {
+  0% {opacity: 0.0;}
+  5% {opacity: 0.025;}
+  10% {opacity: 0.05;}
+  15% {opacity: 0.07;}
+  20% {opacity: 0.1;}
+  25% {opacity: 0.15;}
+  30% {opacity: 0.2;}
+  35% {opacity: 0.25;}
+  40% {opacity: 0.3;}
+  45% {opacity: 0.35;}
+  50% {opacity: 0.4;}
+  55% {opacity: 0.45;}
+  60% {opacity: 0.5;}
+  65% {opacity: 0.55;}
+  70% {opacity: 0.6;}
+  75% {opacity: 0.65;}
+  80% {opacity: 0.7;}
+  85% {opacity: 0.75;}
+  90% {opacity: 0.8;}
+  92% {opacity: 0.85;}
+  95% {opacity: 0.9;}
+  97% {opacity: 0.95;}
+  100% {opacity: 1.0;}
+}
+
+@keyframes sunset {
+  0% {opacity: 0.0;}
+  10% {opacity: 0.1;}
+  20% {opacity: 0.2;}
+  30% {opacity: 0.3;}
+  40% {opacity:0.4;}
+  50% {opacity: 0.5;}
+  60% {opacity: 0.6;}
+  70% {opacity: 0.7;}
+  80% {opacity: 0.8;}
+  90% {opacity: 0.9;}
+  100% {opacity: 1.0;}
 }
 
 @keyframes drifting_clouds {
