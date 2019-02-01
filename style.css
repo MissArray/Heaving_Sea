@@ -27,6 +27,7 @@ body {
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   animation-timing-function: ease-in-out;
+  animation-delay: 3s;
   z-index: 2;
 }
 
@@ -71,6 +72,7 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  animation-delay: 3s;
   z-index: 4;
   }
 
@@ -85,6 +87,7 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  animation-delay: 3s;
   z-index: 4;
   }
 
@@ -114,7 +117,6 @@ body {
 @keyframes heaving_sea {
   from {top:95vh;}
   to {top: 78vh;}
-
 }
 
 @keyframes sun-setting {
