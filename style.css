@@ -8,19 +8,33 @@ body {
   width: 100vw;
   margin: 0px 0px;
   background-color: #7cc1fa;
-  background: url('../images/daylight.svg');
   -webkit-background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   background-size: 100% 100%;
   overflow: hidden;
+  }
+
+#daylight {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background: url('../images/daylight.svg');
   z-index: 1;
 }
 
 #sunset-gradient {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  left: 0;
   height: 100vh;
   width: 100vw;
   margin: 0;
   background: url('../images/sunset-stars.svg');
+  -moz-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
   background-size: 100% auto;
   animation-name: sunset;
   animation-duration: 8s;
