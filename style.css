@@ -246,9 +246,21 @@ MEDIA QUERIES
     grid-template-columns: repeat(3, 1fr);
   }
 
-}
+  #daylight, #sunset-gradient {
+    grid-column-end: -1;
+    background-size: auto 100%;
+    }
 
-#daylight, #sunset-gradient {
-  grid-column-end: -1;
-  background-size: auto 100%;
+  #sun-img, #moon-img {
+    width: 100%;
+    height: auto;
+    margin-top: 2.5vh;
+    margin-right: 1vw;
   }
+
+  #cloud_1, #cloud_2 {
+    width: 95%;
+    height: auto;
+  }
+
+}

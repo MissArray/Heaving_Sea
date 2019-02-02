@@ -1,5 +1,6 @@
 # Heaving Sea
-Animated seascape
+* Responsive animated seascape
+* Tested on Firefox, Chrome, Edge
 
 ## All graphics
 © Artemis Gause 2019
