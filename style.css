@@ -234,4 +234,21 @@ to {
 }
 }
 
+/*/////////////////////////////
+MEDIA QUERIES
+///////////////////////////////
+*/
 
+@media (max-width: 500px) {
+
+  body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+#daylight, #sunset-gradient {
+  grid-column-end: -1;
+  background-size: auto 100%;
+  }
