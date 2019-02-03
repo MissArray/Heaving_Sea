@@ -1,4 +1,3 @@
-/*Tried transition instead of keyframes, but the changes are instant*/
 
 body {
   display: grid;
@@ -13,6 +12,36 @@ body {
   background-size: 100% 100%;
   overflow: hidden;
   }
+
+#author {
+  display: flex;
+  flex-flow: column;
+  grid-column-start: 1;
+  grid-row: 1 / span 1;
+  justify-self: center;
+  margin: 22rem 5rem 2rem 2rem;
+  background-color: rgb(218, 218, 165);
+  height: 8rem;
+  width: 8rem;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  z-index: 3;
+  opacity: 0.025;
+}
+
+#author > span {
+  justify-self: center;
+  align-self: center;
+  color: #894adb;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 0.8rem;
+  padding: 2rem 0.2rem;
+  text-align: center;
+}
+
+#author:hover {
+  opacity: 1;
+}
 
 #daylight {
   grid-column-start: 1;
